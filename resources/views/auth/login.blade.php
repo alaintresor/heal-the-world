@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row login-form">
                 <div class="col-lg-6 text-container">
-                    <h1>You’re Not Alone</h1>
+                    <h1>Being healthly</h1>
                     <p>
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
+class ComposerStaticInit450b1d28ca060f690eb655fae5473c1c
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
@@ -148,7 +148,6 @@ class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
             'Dotenv\\' => 7,
             'Doctrine\\Instantiator\\' => 22,
             'Doctrine\\Inflector\\' => 19,
-            'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Dflydev\\DotAccessData\\' => 22,
             'DeepCopy\\' => 9,
@@ -337,8 +336,8 @@ class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-factory/src',
-            1 => __DIR__ . '/..' . '/psr/http-message/src',
+            0 => __DIR__ . '/..' . '/psr/http-message/src',
+            1 => __DIR__ . '/..' . '/psr/http-factory/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -458,10 +457,6 @@ class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
         array (
             0 => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector',
         ),
-        'Doctrine\\Deprecations\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations',
-        ),
         'Doctrine\\Common\\Lexer\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/lexer/src',
@@ -523,6 +518,7 @@ class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
         'App\\Http\\Controllers\\Auth\\ResetPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ResetPasswordController.php',
         'App\\Http\\Controllers\\Auth\\VerificationController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/VerificationController.php',
         'App\\Http\\Controllers\\BlogController' => __DIR__ . '/../..' . '/app/Http/Controllers/BlogController.php',
+        'App\\Http\\Controllers\\CommentController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommentController.php',
         'App\\Http\\Controllers\\CommunityController' => __DIR__ . '/../..' . '/app/Http/Controllers/CommunityController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
@@ -691,8 +687,6 @@ class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
         'Dflydev\\DotAccessData\\Util' => __DIR__ . '/..' . '/dflydev/dot-access-data/src/Util.php',
         'Doctrine\\Common\\Lexer\\AbstractLexer' => __DIR__ . '/..' . '/doctrine/lexer/src/AbstractLexer.php',
         'Doctrine\\Common\\Lexer\\Token' => __DIR__ . '/..' . '/doctrine/lexer/src/Token.php',
-        'Doctrine\\Deprecations\\Deprecation' => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations/Deprecation.php',
-        'Doctrine\\Deprecations\\PHPUnit\\VerifyDeprecations' => __DIR__ . '/..' . '/doctrine/deprecations/lib/Doctrine/Deprecations/PHPUnit/VerifyDeprecations.php',
         'Doctrine\\Inflector\\CachedWordInflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/CachedWordInflector.php',
         'Doctrine\\Inflector\\GenericLanguageInflectorFactory' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/GenericLanguageInflectorFactory.php',
         'Doctrine\\Inflector\\Inflector' => __DIR__ . '/..' . '/doctrine/inflector/lib/Doctrine/Inflector/Inflector.php',
@@ -5759,10 +5753,10 @@ class ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInitc88bf75d7428aa8370f30c5c288b6598::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit450b1d28ca060f690eb655fae5473c1c::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit450b1d28ca060f690eb655fae5473c1c::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit450b1d28ca060f690eb655fae5473c1c::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit450b1d28ca060f690eb655fae5473c1c::$classMap;
 
         }, null, ClassLoader::class);
     }
