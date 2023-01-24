@@ -53,7 +53,7 @@
                     </div>
                     <br>
                     <div class="form-group">
-                        <input type="submit" class="form-control" value="Login">
+                        <a href="/dashboard"> <input type="submit" class="form-control" value="Login"></a>
                     </div>
                     <div class="flex">
                         <div>
