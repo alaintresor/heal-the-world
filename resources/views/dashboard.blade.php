@@ -12,8 +12,9 @@
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,400;1,600&display=swap"
+        rel="stylesheet">
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
@@ -32,13 +33,23 @@
                     <nav>
 
                         <span>
-                            <i class="fa-solid fa-envelope"></i>
+                            <i class="fa-solid fa-globe" style="font-size: 30px; color: gray;"></i>
                         </span>
                         <span>
-                            <i class="fa-solid fa-bell"></i>
+                            <i class="fa-regular fa-envelope" style="font-size: 30px; color: gray;"></i>
                         </span>
                         <span>
-                            <i class="fa-solid fa-user"></i>
+                            <i class="fa-regular fa-bell" style="font-size: 30px; color: gray;"></i>
+                        </span>
+                        <span>
+                            <img src="./storage/images/13.png" alt="">
+
+                            <!-- <div class="profile-image">
+                            </div> -->
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-gear" style="font-size: 30px; color: gray;"></i>
+
                             <!-- <div class="profile-image">
                             </div> -->
                         </span>
@@ -49,14 +60,21 @@
                 <div class="row-container">
                     <div class="col-lg-2 sidebar">
                         <div class="nav-item">
-                            <a href="#"><span> <i class="fa-solid fa-users-rays"></i></span> Community</a>
+                            <a href="#"><span> <i class="fa-solid fa-house-chimney"></i></span> Dashboard</a>
                         </div>
                         <div class="nav-item">
-                            <a href="#"><span><i class="fa-solid fa-blog"></i></span> My Post</a>
+                            <a href="#"><span> <i class="fa-regular fa-square-plus"></i></span> Create Post</a>
+                        </div>
+                        <div class="nav-item">
+                            <a href="#"><span> <i class="fa-solid fa-users-rays"></i></span> Community</a>
                         </div>
                         <div class="nav-item">
                             <a href="#"><span><i class="fa-solid fa-user-doctor"></i></span> Therapies</a>
                         </div>
+                        <div class="nav-item">
+                            <a href="#"><span><i class="fa-solid fa-blog"></i></span> My Post</a>
+                        </div>
+
                         <div class="nav-item">
                             <a href="#"> <span><i class="fa-solid fa-user"></i></span> Profile</a>
                         </div>
@@ -66,96 +84,18 @@
 
                     </div>
                     <div class="col-lg-10 body-content">
-                        <div class="blog">
-                            <div class="row">
-                                <div class="col-lg-8">
-
-
-                                    <div class="blog-box">
-                                        <div class="head">
-                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                width="50" height="50" alt="">Mugisha Eric
-                                        </div>
-                                        <div class="content">
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                        </div>
-                                        <div class="footer">
-
-                                            <span> 12 &nbsp;<i class="fa-solid fa-comment"></i></span>
-
-                                        </div>
-                                    </div>
-                                    <div class="blog-box">
-                                        <div class="head">
-                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                width="50" height="50" alt="">Mugisha Eric
-                                        </div>
-                                        <div class="content">
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                        </div>
-                                        <div class="footer">
-
-                                            <span> 12 &nbsp;<i class="fa-solid fa-comment"></i></span>
-
-                                        </div>
-                                    </div>
-                                    <div class="blog-box">
-                                        <div class="head">
-                                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                                                width="50" height="50" alt="">Mugisha Eric
-                                        </div>
-                                        <div class="content">
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                            this is post example and this is it
-                                        </div>
-                                        <div class="footer">
-
-                                            <span> 12 &nbsp;<i class="fa-solid fa-comment"></i></span>
-
-                                        </div>
-                                    </div>
+                        <div class="container">
+                            <div class="box">
+                                <h3>Hi, Welcome Back !</h3>
+                                <div class="content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac potenti nunc nibh a
+                                    faucibus rhoncus. Ipsum gravida ut mattis in euismod enim id netus porttitor.
+                                    Scelerisque quisque augue congue ipsum feugiat. Dui lorem sit nullam
                                 </div>
+                            </div>
+
+                            <div class="box">
+                                <img src="./storage/images/back.svg" alt="">
                             </div>
                         </div>
                     </div>
