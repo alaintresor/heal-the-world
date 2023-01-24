@@ -19,16 +19,16 @@
 </head>
 
 <body>
-    <div class="header">
+    <div class="main">
 
 
         <div class="container">
-            <div class=" row">
-                <div class="log col-lg-6">
+            <div class="index-menu">
+                <div class="log ">
                     <h1>HEAL THE WORLD</h1>
                     <p>You are not alone</p>
                 </div>
-                <div class="nav col-lg-6">
+                <div class="nav ">
                     <nav>
                         <!-- <span>
                             Home
@@ -37,10 +37,13 @@
                             How It Works
                         </span> -->
                         <span class="login">
-                            Login
+                            <a href="/login"> Login</a>
                         </span>
                         <span class="btn-borded">
-                            Join Now
+                            <a href="/register">Join Now</a>
+                        </span>
+                        <span class="mobile-menu">
+                            <i class="fa-solid fa-bars"></i>
                         </span>
                     </nav>
                 </div>
@@ -65,13 +68,33 @@
 
                     </div>
                     <div class="image col-lg-6">
-                        <img src="./storage/images/img.svg" alt="">
+                        <img src="./storage/images/img.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
+        <footer class="container">
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 right">
+                    <span>English (United State) <span class="icon"> <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></span></span>
+                </div>
+                <div class="col-lg-6 left">
+                    <span>
+                        Help
+                    </span>
+                    <span>
+                        Privacy
+                    </span>
+                    <span>
+                        Terms
+                    </span>
+                </div>
+            </div>
     </div>
-
+    </footer>
+    <script src="https://kit.fontawesome.com/5356469735.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

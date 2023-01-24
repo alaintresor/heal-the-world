@@ -1,73 +1,95 @@
-@extends('layouts.app')
+<!doctype html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('login') }}">
-                        @csrf
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
-                        <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
+    <title>Heal The World</title>
 
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+    <!-- Scripts -->
+    @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+</head>
+
+<body>
+    <div class="main">
+
+
+        <div class="container">
+            <div class="row login-form">
+                <div class="col-lg-6 text-container">
+                    <h1>You’re Not Alone</h1>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.
+                    </p>
+                </div>
+                <div class="col-lg-6 form-container">
+                    <div class="title">
+                        <center>
+                            <img src="./storage/images/Padlock.png" alt="" width="60">
+                        </center>
+                        <h2>
+                            Welcome Back !
+                        </h2>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"></label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1"></label>
+                        <input type="password" class="form-control" id="exampleFormControlInput1"
+                            placeholder="Enter Password">
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <a href="/dashboard"> <input type="submit" class="form-control" value="Login"></a>
+                    </div>
+                    <div class="flex">
+                        <div>
+                            Create Account <span> <a href="/register">Sign Up</a></span>
                         </div>
-
-                        <div class="row mb-3">
-                            <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="current-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
+                        <div>
+                            <span>Forget Password</span>
                         </div>
-
-                        <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember Me') }}
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="row mb-0">
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Login') }}
-                                </button>
-
-                                @if (Route::has('password.request'))
-                                    <a class="btn btn-link" href="{{ route('password.request') }}">
-                                        {{ __('Forgot Your Password?') }}
-                                    </a>
-                                @endif
-                            </div>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>
+        <footer class="container">
+            <hr>
+            <div class="row">
+                <div class="col-lg-6 right">
+                    <span>English (United State) <span class="icon"> <i class="fa fa-angle-down"
+                                aria-hidden="true"></i></span></span>
+                </div>
+                <div class="col-lg-6 left">
+                    <span>
+                        Help
+                    </span>
+                    <span>
+                        Privacy
+                    </span>
+                    <span>
+                        Terms
+                    </span>
+                </div>
+            </div>
     </div>
-</div>
-@endsection
+    </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/5356469735.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

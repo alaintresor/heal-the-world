@@ -24,6 +24,9 @@ Route::get('/', function () {
         'phpVersion' => PHP_VERSION,
     ]);
 });
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
